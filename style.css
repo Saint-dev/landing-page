@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap');
+*{
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'League Spartan', sans-serif;
+}
+
+.container-nav{
+	max-width: 1400%;
+	padding: 2%;
+	margin: 1px;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav ul{
+	list-style: none;
+}
+
+nav ul li{
+	display: inline-block;
+}
+
+nav ul li a{
+	padding: 10px 10px;
+	text-decoration: none;
+	font-size: 20px;
+	transition: 0.6s;
+	cursor: pointer;
+}
+
+nav ul li a:hover{
+	color: black;
+
+}
+input[type="submit"]{
+	padding: 10px 20px;
+	color: white;
+	border-radius: 20px;
+	border: none;
+	transition: 0.6s;
+	cursor: pointer;
+	background-color: blueviolet;
+}
+
+input[type="submit"]:hover{
+	color: #000;
+	background-color: darkviolet;
+}
+.logo{
+	font-size: 23px;
+}
+
+.container-textos{
+	margin: 150px;
+}
+
+.container-textos{
+	font-size: 4rem;
+}
+.container-textos p{
+	font-size: 1rem;
+}
+.container-textos h1{
+	padding-bottom: 20px;
+}
+
+nav ul li a[href^="#"] {
+  color: black;
+}
+@media (max-width: 600px) {
+	.container-textos{
+		margin-top: 10rem;
+		margin-left: 3rem;
+	}
+	.container-textos h1{
+		font-size: 3rem;
+	}
+	.container-textos p{
+		white-space: nowrap;
+	}
+	.logo{
+		display: none;
+	}
+	nav{
+		justify-content: center;
+		flex-wrap: nowrap;
+	}
+	nav ul li a{
+		font-size: 10px;
+	}
+	.botao-call{
+		display: none;
+	}
+}
